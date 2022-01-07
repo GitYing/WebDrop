@@ -111,15 +111,15 @@
             </template>
           </b-table>
         </b-tab-item>
-        <b-tab-item label="Messages" v-bind:class="{ noanim: !$store.state.settings.anim }">
+        <b-tab-item label="Content" v-bind:class="{ noanim: !$store.state.settings.anim }">
           <template slot="header">
             <android-messages-icon class="icon is-small"></android-messages-icon>
-            <span><span class="icon-text">Messages</span> <b-tag class="countTag" v-bind:class="{ 'is-danger': glowMsgsBtn }" rounded>{{ msgs.length }}</b-tag></span>
+            <span><span class="icon-text">Notes and Links</span> <b-tag class="countTag" v-bind:class="{ 'is-danger': glowMsgsBtn }" rounded>{{ msgs.length }}</b-tag></span>
           </template>
-          <b-field label="Message" class="is-floating-label">
+          <b-field label="Content" class="is-floating-label">
             <div class="control is-clearfix">
               <textarea
-                placeholder="Type message here..."
+                placeholder="Type or paste here..."
                 class="textarea"
                 v-model="msg"
                 ref="msgInput"
@@ -129,15 +129,15 @@
           </b-field>
           <b-field>
             <div class="control">
-              <b-button type="button is-primary" @click="sendMsg">Send</b-button>
+              <b-button type="button is-primary" @click="sendMsg">Share</b-button>
               <div class="is-pulled-right">
                 <b-tooltip label="Auto copy to clipboard" position="is-left" type="is-dark">
                   <router-link to="/settings" tag="div" class="button is-dark">
                     <robot-icon class="icon is-small"></robot-icon>
                   </router-link>
                 </b-tooltip>&nbsp;
-                <b-tooltip label="Clear all messages" position="is-left" type="is-dark">
-                  <a class="button is-danger" aria-label="Clear all messages" title="Clear all messages" @click="clearAllMsgs">
+                <b-tooltip label="Clear everything" position="is-left" type="is-dark">
+                  <a class="button is-danger" aria-label="Clear everything" title="Clear everything" @click="clearAllMsgs">
                     <notification-clear-all-icon class="icon is-small"></notification-clear-all-icon>
                   </a>
                 </b-tooltip>
@@ -146,7 +146,7 @@
           </b-field>
           <div id="messages">
             <p v-show="msgs.length === 0">
-              No messages
+              Nothing shared
             </p>
             <div class="card" v-for="(msg, index) in msgs" :key="index">
               <header class="card-header">

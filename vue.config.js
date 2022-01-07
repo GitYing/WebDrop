@@ -1,6 +1,9 @@
 const GoogleFontsPlugin = require('@beyonk/google-fonts-webpack-plugin')
 
 module.exports = {
+    devServer: {
+    disableHostCheck: true
+  },
   pwa: {
     workboxOptions: {
       skipWaiting: true
