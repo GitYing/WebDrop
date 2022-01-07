@@ -20,7 +20,7 @@
             <li>Resume interrupted downloads</li>
             <li>Auto copy messages sent</li>
           </ul>
-          <p>Go to <router-link to="/settings">settings</router-link> to configure WebDrop to your needs.</p>
+          <p>Go to <router-link to="/settings">settings</router-link> to configure Go2.Quest to your needs.</p>
           <h3 class="content is-size-4">FAQ</h3>
           <ul>
             <li>Do I need to wait for devices to get discovered before adding files ?</li><br/>
@@ -33,13 +33,13 @@
             <p><b>Ans:</b>&nbsp;Internet is only required for discovering devices. Your devices are connected <b>Peer To Peer</b>. This P2P connection can be made through your local network using the same WiFi hotspot, thus increasing transfer speed ! Files are not shared through internet unless you use "Share via Internet" feature.</p>
 
             <li>How to transfer files to someone over the internet ?</li><br/>
-            <p><span style="display: inline-block;vertical-align: top;"><b>Ans:</b>&nbsp;Click the "globe" icon</span>&nbsp;<span style="display: inline-block;vertical-align: bottom;"><earth-icon></earth-icon></span>&nbsp;<span style="vertical-align: top;">on navbar, share the room code or invite link with your friends. Once your friends join your room, you can share files with them. Remember, you'll have to keep WebDrop open until transfer is complete.</span></p>
+            <p><span style="display: inline-block;vertical-align: top;"><b>Ans:</b>&nbsp;Click the "globe" icon</span>&nbsp;<span style="display: inline-block;vertical-align: bottom;"><earth-icon></earth-icon></span>&nbsp;<span style="vertical-align: top;">on navbar, share the room code or invite link with your friends. Once your friends join your room, you can share files with them. Remember, you'll have to keep Go2.Quest open until transfer is complete.</span></p>
 
             <li>Will you know the files being sent ?</li><br/>
             <p><b>Ans:</b>&nbsp;No ! Absolutely not ! P2P connection made ensures that you and only the other connected devices will know the data/files passed between each other.</p>
 
             <li>Are files passed through any intermediary servers ?</li><br/>
-            <p><b>Ans:</b>&nbsp;Public WebTorrent trackers are used to make P2P connections. Everything else including file transfer happens in you & your recepient's device and browser. <a href="https://github.com/subins2000/p2pt#how-does-it-work-" target="_blank">Know More</a></p>
+            <p><b>Ans:</b>&nbsp;Public WebTorrent trackers are used to make P2P connections. Everything else including file transfer happens in you & your recepient's device and browser.</p>
 
             <li>Error: Can't connect to Trackers!</li><br/>
             <p><b>Ans:</b>&nbsp;There are some unknown issues with some routers and internet service providers (ISP) for making P2P connections between devices. Try changing your internet connection or browser. Some ISPs purposefully block Torrent services :(</p>

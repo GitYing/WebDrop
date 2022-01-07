@@ -9,8 +9,8 @@ module.exports = {
       skipWaiting: true
     },
     manifestOptions: {
-      name: "WebDrop",
-      short_name: "WebDrop",
+      name: "Go2.Quest",
+      short_name: "Go2.Quest",
       start_url: "./",
       display: "standalone",
       theme_color: "#000",
