@@ -584,7 +584,28 @@ export default {
 
       this.msg = ''
     },
+    postLink (link) {
+      const data = {
+        type: 'msg',
+        msg: link,
+        time: new Date().toLocaleTimeString()
+      }
 
+      this.$store.commit('addMessage', {
+        ...data,
+        ...{
+          name: this.$store.state.settings.name,
+          color: this.$store.state.settings.color
+        }
+      })
+
+      for (const key in this.$store.state.users) {
+        const user = this.$store.state.users[key]
+        this.$store.state.p2pt.send(user.conn, data)
+      }
+
+      this.msg = ''
+    },
     startSpeedUpdate () {
       if (!speedCheck) {
         const speed = () => {
