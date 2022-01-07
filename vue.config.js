@@ -13,7 +13,7 @@ module.exports = {
       short_name: "Go2.Quest",
       start_url: "./",
       display: "standalone",
-      theme_color: "#000",
+      theme_color: "#000000",
       icons: [
         {
           src: "./favicon.svg",

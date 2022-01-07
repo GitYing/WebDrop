@@ -20,7 +20,7 @@
     
     <!-- Twitter Meta Tags -->
     <!--<meta name="twitter:card" content="summary_large_image">-->
-    <meta name="twitter:title" content="Go2.Quest - Easily share files across devices!">
+    <meta name="twitter:title" content="Go2.Quest - Easily content across devices!">
     <meta name="twitter:description" content="Easily share content across different devices. No installation, just a website!">
     <meta name="twitter:image" content="https://Go2.Quest/favicon.png">
   </head>
@@ -30,14 +30,41 @@
     </noscript>
     <div id="app"></div>
     <script>
-      if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1" && location.hostname.substr(0, 7) !== '192.168') {
-          var id = "Go2.Quest";
-          (function(i,s,o,g,r,a,m){i['ccc']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://demos.subinsb.com/sanders/s.js?id='+id,'ga');
+      window.addEventListener('load', function() {
+      const queryString = window.location.search;
+      console.log(queryString);
+      const urlParams = new URLSearchParams(queryString);
+      if(urlParams.get('link')){
+        const data = {
+        type: 'msg',
+        msg: urlParams.get('link'),
+        time: new Date().toLocaleTimeString()
       }
+
+      __VUE_DEVTOOLS_GLOBAL_HOOK__.store.commit('addMessage', {
+        ...data,
+        ...{
+          name: "BOT",
+          color: __VUE_DEVTOOLS_GLOBAL_HOOK__.store.state.settings.color
+        }
+      })
+
+      for (const key in __VUE_DEVTOOLS_GLOBAL_HOOK__.store.state.users) {
+        const user = __VUE_DEVTOOLS_GLOBAL_HOOK__.store.state.users[key]
+        __VUE_DEVTOOLS_GLOBAL_HOOK__.store.state.p2pt.send(user.conn, data)
+      }
+      }
+      })
     </script>
+    <style>
+      .navbar-brand{
+        padding-left:20%;
+        padding-right:20%;
+      }
+      #app > div:nth-child(1) > nav > div.navbar-brand > div > a{
+        display:none;
+      }
+    </style>
     <!-- built files will be auto injected -->
   </body>
 </html>

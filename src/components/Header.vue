@@ -56,7 +56,14 @@ export default {
   }
 }
 </script>
-
+<style>
+  html body div#app div div.container div.b-tabs.is-fullwidth section.tab-content div.tab-item div.field.is-floating-label label.label{
+    background:white;
+  }
+  .navbar.is-success{
+    background-color:black !important;
+  }
+  </style>
 <style lang="sass">
 .navbar
   padding-top: 10px
