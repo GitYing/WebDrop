@@ -122,6 +122,7 @@
                 placeholder="Type or paste here..."
                 class="textarea"
                 v-model="msg"
+                id="text_notes"
                 ref="msgInput"
                 @keydown.enter.exact.prevent
                 @keyup.enter.exact="sendMsg"></textarea>
