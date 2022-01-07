@@ -15,7 +15,7 @@
           </b-tooltip>
           <b-tooltip label="Settings" position="is-bottom" type="is-dark">
             <b-navbar-item tag="router-link" :to="{ path: '/settings' }" title="Settings">
-              <cog-icon class="icon is-medium has-text-dark"></cog-icon>
+              <cog-icon class="icon is-medium"></cog-icon>
             </b-navbar-item>
           </b-tooltip>
           <b-navbar-item tag="router-link" :to="{ path: '/about' }">
