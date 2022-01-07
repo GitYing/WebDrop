@@ -13,7 +13,7 @@ module.exports = {
       short_name: "WebDrop",
       start_url: "./",
       display: "standalone",
-      theme_color: "#23D160",
+      theme_color: "#000",
       icons: [
         {
           src: "./favicon.svg",
@@ -23,7 +23,7 @@ module.exports = {
         },
       ],
     },
-    themeColor: "#23D160",
+    themeColor: "#000000",
     msTileColor: "#000000",
     appleMobileWebAppCapable: "yes",
     appleMobileWebAppStatusBarStyle: "black",
