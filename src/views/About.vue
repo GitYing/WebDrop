@@ -2,7 +2,7 @@
   <div class="about">
     <div class="container">
       <div class="content">
-        <h3 class="is-size-3">WebDrop.Space</h3>
+        <h3 class="is-size-3">Go2.Quest</h3>
         <p>Easily share files & messages across devices !</p>
       </div>
       <b-tabs v-model="tab" expanded>
@@ -10,7 +10,7 @@
           <p>3 easy steps to share !</p>
           <ol>
             <li>Connect your devices to the same WiFi (or join with room link/code)</li>
-            <li>Open this website (WebDrop.Space) on your devices</li>
+            <li>Open this website (Go2.Quest) on your devices</li>
             <li>Choose files and share !</li>
           </ol>
           <h3 class="content is-size-5">Features</h3>
@@ -44,30 +44,6 @@
             <li>Error: Can't connect to Trackers!</li><br/>
             <p><b>Ans:</b>&nbsp;There are some unknown issues with some routers and internet service providers (ISP) for making P2P connections between devices. Try changing your internet connection or browser. Some ISPs purposefully block Torrent services :(</p>
           </ul>
-          <p class="has-text-centered">WebDrop is a <a href="https://github.com/subins2000/WebDrop" target="_blank">Free & Open Source (FOSS)</a> software 🔍❤️</p>
-        </b-tab-item>
-        <b-tab-item label="About">
-          <center class="content">
-            <p>Made by <a href="https://twitter.com/SubinSiby" target="_blank">Subin Siby</a></p>
-            <p>Suggestions ? Feedback ? I'd love to hear it !<br/><a href="https://subinsb.com/contact/">Ping me</a></p>
-            <p>WebDrop is a <a href="https://en.wikipedia.org/wiki/Free_Software" target="_blank">സ്വതന്ത്ര/free/libre</a> software [AGPL-3] 🔍❤️</p>
-            <b-field class="is-grouped is-grouped-centered">
-              <div class="control">
-                <a href="https://subinsb.com/donate" target="_blank">
-                  <b-button type="is-warning" size="is-medium">Donate</b-button>
-                </a>
-              </div>
-              <div class="control">
-                <a href="https://github.com/subins2000/WebDrop" target="_blank">
-                  <b-button type="is-success" size="is-medium">Source Code</b-button>
-                </a>
-              </div>
-            </b-field><br/>
-            <p>Check out this <a href="https://vett.space" target="_blank">Dots game</a> which is also P2P.</p>
-            <p><a href="https://subinsb.com/projects/">See my other projects</a></p>
-            <img src="https://WebDrop.Space/favicon.png" />
-            <p>May the web be with you</p>
-          </center>
         </b-tab-item>
       </b-tabs>
     </div>
