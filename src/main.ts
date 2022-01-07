@@ -59,7 +59,7 @@ let announceURLs = [
   // 'ws://192.168.100.7:5000'
 ]
 
-if (window.location.hostname === 'localhost') {
+if (window.location.hostname === 'disable') {
   announceURLs = ['ws://0.0.0.0:5000']
 }
 
