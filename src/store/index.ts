@@ -35,7 +35,7 @@ export default new Vuex.Store({
       autoStart: true,
       autoBrowserDownload: true,
       anim: true,
-      defaultTab: 0,
+      defaultTab: 1,
 
       name: '',
       color: ''
