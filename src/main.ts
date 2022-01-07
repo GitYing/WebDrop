@@ -67,7 +67,7 @@ const INTERNET_ROOM_CODE_LENGTH = 4
 
 Vue.prototype.$ANNOUNCE_URLS = announceURLs
 Vue.prototype.$INTERNET_ROOM_CODE_LENGTH = INTERNET_ROOM_CODE_LENGTH
-Vue.prototype.$INTERNET_ROOM_SHARE_LINK = 'https://WebDrop.Space/#/?room='
+Vue.prototype.$INTERNET_ROOM_SHARE_LINK = 'https://Go2.Quest/#/?room='
 
 Vue.prototype.$p2pt = null
 Vue.prototype.$pf = new PeerFiles()
