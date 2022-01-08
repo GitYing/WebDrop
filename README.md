@@ -1,8 +1,8 @@
-# Go2.Quest
+# ip2.quest
 
 P2P file transfer in browser similar to Apple's AirDrop.
 
-Simply go to the website [Go2.Quest.Space](https://Go2.Quest.Space) on the devices, choose files and share !
+Simply go to the website [ip2.quest.Space](https://ip2.quest.Space) on the devices, choose files and share !
 
 No installations whatsoever, just a website !
 
@@ -26,7 +26,7 @@ Case 1: I want to share files with my friend's phone or computer, but we don't h
 
 Case 2: I want to copy a text from my phone to computer, arghh😫 I have to open WhatsApp Web/Telegram now, send a message to myself -_- 😒
 
-Both the above problems are solved with [Go2.Quest](https://Go2.Quest.Space). Simply open the website on any number of your devices (even simultaneously) and share files & messages !
+Both the above problems are solved with [ip2.quest](https://ip2.quest.Space). Simply open the website on any number of your devices (even simultaneously) and share files & messages !
 
 ### Development
 
@@ -53,7 +53,7 @@ Download [this script](https://github.com/subins2000/p2pt/blob/master/startTrack
 
 ## Thanks
 
-* [Radhika Sharma](https://twitter.com/radhikaa2001) for the [logo](https://Go2.Quest.Space/favicon.png)
+* [Radhika Sharma](https://twitter.com/radhikaa2001) for the [logo](https://ip2.quest.Space/favicon.png)
 * [Buefy](https://buefy.org/)
 * [Material Design Icons](https://materialdesignicons.com/)
 * [WebTorrent](https://webtorrent.io)

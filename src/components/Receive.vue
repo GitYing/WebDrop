@@ -3,7 +3,7 @@
     <b-navbar class="navbar is-primary is-active has-text-white has-shadow" :mobile-burger="false">
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <h1 class="is-size-4">Go2.Quest</h1>
+          <h1 class="is-size-4">ip2.quest</h1>
         </b-navbar-item>
         <b-navbar-item tag="div">
           Shares

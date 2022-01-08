@@ -3,7 +3,7 @@
     <b-navbar v-if="$route.name !== 'About'" class="is-success has-shadow" :mobile-burger="false" :transparent="true">
       <template slot="brand">
         <b-navbar-item id="brand" tag="router-link" :to="{ path: '/' }">
-          <h1 class="is-size-4">Go2.Quest</h1>
+          <h1 class="is-size-4">ip2.quest</h1>
         </b-navbar-item>
         <div class="actions">
           <b-tooltip label="Home" position="is-bottom" type="is-dark">
@@ -32,7 +32,7 @@
     <b-navbar v-else class="navbar is-warning has-text-white" :mobile-burger="false">
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <h1 class="is-size-4">Go2.Quest</h1>
+          <h1 class="is-size-4">ip2.quest</h1>
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/grid' }">
           Grid

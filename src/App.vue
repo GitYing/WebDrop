@@ -60,7 +60,7 @@ export default {
         try {
           let ip
 
-          // https://github.com/subins2000/Go2.Quest/issues/8
+          // https://github.com/subins2000/ip2.quest/issues/8
           try {
             ip = await publicIP.v4()
           } catch (_) {
@@ -89,7 +89,7 @@ export default {
 
     startP2PT (identifier) {
       const p2pt = new P2PT(this.$ANNOUNCE_URLS)
-      p2pt.setIdentifier('Go2.Quest' + identifier)
+      p2pt.setIdentifier('ip2.quest' + identifier)
 
       p2pt.on('peerconnect', (peer) => {
         p2pt.send(peer, {

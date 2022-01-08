@@ -9,8 +9,8 @@ module.exports = {
       skipWaiting: true
     },
     manifestOptions: {
-      name: "Go2.Quest",
-      short_name: "Go2.Quest",
+      name: "ip2.quest",
+      short_name: "ip2.quest",
       start_url: "./",
       display: "standalone",
       theme_color: "#000000",
