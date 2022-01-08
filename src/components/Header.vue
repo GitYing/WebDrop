@@ -6,6 +6,11 @@
           <h1 class="is-size-4">Go2.Quest</h1>
         </b-navbar-item>
         <div class="actions">
+          <b-tooltip label="Home" position="is-bottom" type="is-dark">
+            <b-navbar-item tag="router-link" :to="{ path: '/' }" title="Home">
+              <home-icon class="icon is-medium"></home-icon>
+            </b-navbar-item>
+          </b-tooltip>
           <b-tooltip :label="internetShare ? 'Joined An Internet Share Room' : 'Share via Internet'" position="is-bottom" :type="internetShare ? 'is-info' : 'is-primary'">
             <b-navbar-item tag="router-link" :to="{ path: '/room' }">
               <a class="button is-text" v-bind:class="{ 'is-info' : internetShare }" :aria-label="internetShare ? 'Joined An Internet Share Room' : 'Share via Internet'">
@@ -40,13 +45,15 @@
 <script>
 import CogIcon from 'vue-material-design-icons/Cog.vue'
 import EarthIcon from 'vue-material-design-icons/Earth.vue'
+import HomeIcon from 'vue-material-design-icons/Home.vue'
 
 export default {
   name: 'Header',
 
   components: {
     CogIcon,
-    EarthIcon
+    EarthIcon,
+    HomeIcon
   },
 
   computed: {
