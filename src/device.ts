@@ -23,7 +23,7 @@ if (os.match('Linux')) {
   }
 } else if (os.match(/mac/i)) {
   os = 'Mac'
-} else if (ua.match(/Oculus/i)) {
+} else if (ua.includes('Oculus')) {
   os = 'Oculus'
 }
 

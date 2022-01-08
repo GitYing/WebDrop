@@ -22,9 +22,9 @@
         </div>
       </div>
       <div class="field card card-content">
-        <label class="label">Auto Copy</label>
+        <label class="label">Auto Copy/Open</label>
         <div class="control">
-          <b-checkbox v-model="settings.autoCopy">Copy message to clipboard on receive</b-checkbox>
+          <b-checkbox v-model="settings.autoCopy">Copy messages to clipboard and open any links received</b-checkbox>
         </div>
       </div>
       <div class="field card card-content">
